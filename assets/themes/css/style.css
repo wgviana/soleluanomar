@@ -15,6 +15,7 @@
 
 /* Jekyll Bootstrap Colors */
 h1, h2, h3, h4 {
+  color: #d45500;
   font-family: 'Arizonia', cursive;
   text-shadow: 2px 2px 0px #FFFFFF;
 }
