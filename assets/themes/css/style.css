@@ -117,6 +117,12 @@ body
   background: rgba(93, 106, 96, 0.6);
   color: rgba(93, 106, 96, 0.6);
 }
+#fixed-home{
+  min-height: 360px;
+  max-height: 600px;
+  /*overflow: scroll;*/
+  padding: 0px;  
+}
 
 #jb-navbar-collapse ul.nav.navbar-nav li{
   display: inline-block;

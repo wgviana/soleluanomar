@@ -10,7 +10,7 @@ Americanas, Le biscuit, Zelo (cama, mesa e banho), First (cama, mesa e banho), M
 </p>
 
 
-<div class="row" style="margin: 15px;">
+<div class="row">
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
         <div id="menuCategorias" class="list-group list-group-horizontal">
 			<a href="#" class="list-group-item" data-item="Eletro">

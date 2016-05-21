@@ -17,10 +17,3 @@ group: "main"
 	<br/>
 	<p><b>Agora é só se preparar e festejar conosco.</b></p>
 </div>
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
