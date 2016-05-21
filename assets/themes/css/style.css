@@ -17,20 +17,23 @@
 h1, h2, h3, h4 {
   color: #d45500;
   font-family: 'Arizonia', cursive;
-  text-shadow: 2px 2px 0px #FFFFFF;
+  text-shadow: 1px 1px 0px #FFFFFF;
 }
 
 img, media {
   max-width: 100%;
   max-height: 100%;
 }
+html, body { overflow: hidden; height: 100% }
 body 
 {
+  margin:0;
+  padding:0;
   background-color: white;
   background-image: url('/assets/themes/css/img/bg.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: -1px top;
 }
 
 /* posts index */
@@ -89,4 +92,65 @@ body
   color: #FFF; }
 
 .page-header { margin: 0 0 20px 0;}
-.page-header h1{ margin: 0; font-size: 60px;}
+.page-header h1{ margin: 0; font-size: 3em;}
+
+.navbar-default .navbar-brand {
+  color: #d45500;
+  font-family: "Arizonia",cursive;
+  font-size: 2em;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-size: 1.2em;
+}
+#fixed{
+  min-height: 360px;
+  max-height: 600px;
+  overflow: scroll;
+  padding: 0px;
+
+  -moz-box-shadow: 0px 0px 40px #000000;
+  -webkit-box-shadow: 0px 0px 40px #000000;
+  box-shadow: 0px 0px 40px #000000;
+
+  background-color: rgba(93, 106, 96, 0.6);
+  background: rgba(93, 106, 96, 0.6);
+  color: rgba(93, 106, 96, 0.6);
+}
+
+#jb-navbar-collapse ul.nav.navbar-nav li{
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  position: relative;
+  top: 1px;
+}
+#jb-navbar-collapse ul.nav.navbar-nav li:nth-child(1) a::before {content: " ";}
+#jb-navbar-collapse ul.nav.navbar-nav li:nth-child(2) a::before {content: "  ";}
+#jb-navbar-collapse ul.nav.navbar-nav li:nth-child(3) a::before {content: "✉ ";}
+#jb-navbar-collapse ul.nav.navbar-nav li:nth-child(4) a::before {content: " ";}
+
+.list-group-horizontal .list-group-item {
+    display: inline-block;
+}
+.list-group-horizontal .list-group-item {
+  margin-bottom: 0;
+  margin-left:-4px;
+  margin-right: 0;
+}
+.list-group-horizontal .list-group-item:first-child {
+  border-top-right-radius:0;
+  border-bottom-left-radius:4px;
+}
+.list-group-horizontal .list-group-item:last-child {
+  border-top-right-radius:4px;
+  border-bottom-left-radius:0;
+}
+#lista {
+  margin: 15px;
+}
+#lista .list-group {
+  margin: 5px 20px;
+}
