@@ -138,10 +138,9 @@ body
 #jb-navbar-collapse ul.nav.navbar-nav li:nth-child(3) a::before {content: "✉ ";}
 #jb-navbar-collapse ul.nav.navbar-nav li:nth-child(4) a::before {content: " ";}
 
+
 .list-group-horizontal .list-group-item {
-    display: inline-block;
-}
-.list-group-horizontal .list-group-item {
+  display: inline-block;
   margin-bottom: 0;
   margin-left:-4px;
   margin-right: 0;
@@ -154,9 +153,18 @@ body
   border-top-right-radius:4px;
   border-bottom-left-radius:0;
 }
+.list-group-horizontal .list-group-item img { weight:24px; height:24px; }
 #lista {
   margin: 15px;
 }
 #lista .list-group {
   margin: 5px 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .list-group-horizontal a.list-group-item{ font-size: 10px; }
+  .list-group-horizontal .list-group-item img { weight:16px; height:16px; }
+  #dialog {font-size: 12px;}
+  .list-group-item{padding: 5px 10px;}
+  p {margin: 0 5px;}
 }

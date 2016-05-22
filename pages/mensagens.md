@@ -1,25 +1,29 @@
 ---
-layout: page
+layout: home
 title: "Mensagens"
 description: ""
 group: "main"
 ---
 {% include JB/setup %}
-<div style="margin: 15px;">
-  <form method="post" name="contactForm">
-    <div class="form-group">
-    <input type="text" class="form-control" id="name" required placeholder="Informe seu nome">
-    </div>
-    <div class="form-group">
-    <textarea name="mensagem" id="textareaMensagem" class="form-control" rows="3" required placeholder="Deixe aqui sua mensagem"></textarea>
-    </div>
-    <button type="button" class="btn btn-primary addValue">Submit</button>
-  </form>
+<div class="row">
+  <div class="col-xs-12 col-md-7" id="fixed">
+    <div style="margin: 15px;">
+      <form method="post" name="contactForm">
+        <div class="form-group">
+        <input type="text" class="form-control" id="name" required placeholder="Informe seu nome">
+        </div>
+        <div class="form-group">
+        <textarea name="mensagem" id="textareaMensagem" class="form-control" rows="3" required placeholder="Deixe aqui sua mensagem"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary addValue">Enviar</button>
+      </form>
 
-  <div id="contacts">
-  <!-- Conatct Object li.list-group-item.contact will be added here by js -->
-  </div>
+      <div id="contacts">
+      <!-- Conatct Object li.list-group-item.contact will be added here by js -->
+      </div>
+    </div>
 </div>
+</div>  
 
 <!-- Include Firebase Library -->
 <script src="https://cdn.firebase.com/js/client/2.2.3/firebase.js"></script>
