@@ -104,7 +104,7 @@ $(document).on( 'click', '#menuCategorias a.list-group-item', function (e) {
 		      		html += '<div class="input-group">'
 				      html += '<input type="text" id="'+key+'" class="form-control" placeholder="Seu nome">'
 				      html += '<span class="input-group-btn">'
-				        html += '<button class="btn btn-secondaryadd" data-val="'+key+'" type="button">Escolhido</button>'
+				        html += '<button class="btn btn-secondary add" data-val="'+key+'" type="button">Escolhido</button>'
 				      html += '</span>'
 				    html += '</div>'
 				html += '</div>'
