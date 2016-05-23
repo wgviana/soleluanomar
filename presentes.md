@@ -18,7 +18,7 @@ group: "main"
 			<li>Marinox</li>
 			<li>Portinox</li>
 		</ul>
-		Após escolher o item que você quer comprar vá na caixa de mensagem e escreva o que você escolheu.
+		Após escolher o item que você quer comprar escreva seu nome e clique no botão escolhido
 	</p>
 </div>
 <div class="row">
@@ -101,6 +101,8 @@ $(document).on( 'click', '#menuCategorias a.list-group-item', function (e) {
 				// console.log(val.item);
 		    	html += '<div class="list-group-item">'
 		      		html += '<p>'+val.item+'</p>'
+		      		html += '<input type="text" placehold="seu nome" id="'+key+'">'
+		      		html += '<button type="button" class="btn btn-default add" data-val="'+key+'">Escolhido</button>'
 				html += '</div>'
 			}
 		});
@@ -108,6 +110,12 @@ $(document).on( 'click', '#menuCategorias a.list-group-item', function (e) {
 		$("#lista").html(html);
 	});
 })
+$(document).on( 'click', 'button.add', function (e) {
+	e.preventDefault()
+	var itemRef = new Firebase("https://soleluanomar.firebaseio.com/itens/"+$(e.target).data('val'))
+	var nome = $("#"+$(e.target).data('val')).val()
+	itemRef.update({ amigo: nome});
+});
 
 
 // itensRef.push({categoria:'Eletro', item:'Ferro de passar'});
