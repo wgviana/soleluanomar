@@ -18,7 +18,7 @@ group: "main"
 			<li>Marinox</li>
 			<li>Portinox</li>
 		</ul>
-		Após escolhe o item q você quer comprar vá na caixa de mensagem e escreva o q vc escolheu.
+		Após escolher o item que você quer comprar vá na caixa de mensagem e escreva o que você escolheu.
 	</p>
 </div>
 <div class="row">
