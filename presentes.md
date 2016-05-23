@@ -18,7 +18,7 @@ group: "main"
 			<li>Marinox</li>
 			<li>Portinox</li>
 		</ul>
-		Após escolher o item que você quer comprar escreva seu nome e clique no botão escolhido
+		Após escolher o item que você quer comprar escreva seu nome e clique no botão escolhido. Dai é só compra-lo e leva-lo para a festa.
 	</p>
 </div>
 <div class="row">
@@ -99,10 +99,14 @@ $(document).on( 'click', '#menuCategorias a.list-group-item', function (e) {
 			console.log(key)
 			if (typeof val.amigo == "undefined"){
 				// console.log(val.item);
-		    	html += '<div class="list-group-item">'
-		      		html += '<p>'+val.item+'</p>'
-		      		html += '<input type="text" placehold="seu nome" id="'+key+'">'
-		      		html += '<button type="button" class="btn btn-default add" data-val="'+key+'">Escolhido</button>'
+		    	html += '<div class="list-group-item row">'
+		      		html += '<p class="col-md-7 col-xs-12">'+val.item+'</p>'
+		      		html += '<div class="input-group">'
+				      html += '<input type="text" id="'+key+'" class="form-control" placeholder="Seu nome">'
+				      html += '<span class="input-group-btn">'
+				        html += '<button class="btn btn-secondaryadd" data-val="'+key+'" type="button">Escolhido</button>'
+				      html += '</span>'
+				    html += '</div>'
 				html += '</div>'
 			}
 		});

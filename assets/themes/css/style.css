@@ -35,7 +35,13 @@ body
   background-repeat: no-repeat;
   background-position: -1px top;
 }
-
+#fixed p {
+  color: #d45500;
+  height: 35px;
+  margin: 0;
+  padding: 6px 0;
+  vertical-align: text-bottom;
+}
 /* posts index */
 .post > h3.title {
   position: relative;
@@ -168,5 +174,6 @@ body
   #dialog {font-size: 12px;}
   .list-group-item{padding: 5px 10px;}
   p {margin: 0 5px;}
+  #fixed p {color: #d45500; height: 35px; margin: 0; padding: 6px 0; vertical-align: text-bottom; }
   .placa {width: 66%; position: fixed; bottom: 25px; left: 0px;}
 }
