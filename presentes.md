@@ -97,10 +97,12 @@ $(document).on( 'click', '#menuCategorias a.list-group-item', function (e) {
 			var key = childSnapshot.key()
 			var val = childSnapshot.val()
 			console.log(key)
-			// console.log(val.item);
-	    	html += '<div class="list-group-item">'
-	      		html += '<p>'+val.item+'</p>'
-			html += '</div>'
+			if (typeof val.amigo == "undefined"){
+				// console.log(val.item);
+		    	html += '<div class="list-group-item">'
+		      		html += '<p>'+val.item+'</p>'
+				html += '</div>'
+			}
 		});
 		html += '</div>'
 		$("#lista").html(html);
